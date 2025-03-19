@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic1.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="170px" height="150px">
+    </div>
+    
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+    </div>
+    <div class="text-white mx-5 px-4 text-justify" style="line-height: 2rem;">
+        <p style="text-indent: 100px;"> I am <b class="text-warning">Hanash Ahad</b> having 6 months of full-stack web development experience for tech buisnesses, I offer the technical expertise you are seeking for your web developer position.</p>
+        <p>Since doing my new experiences and developing my skillsets in internet and web development from Shaikh Zayed Islamic Center And Also Doing Internship in a well esteemed tech community encoderbytes, I have served as a web developer at <b class="text-warning">EB Lab Learnings</b>, one of the best and biggest premier full-stack web development firm. In this positions , I have led web development projects in diverse industries including technology and financial services</p>
+        <p>I am a skilled web developer and designer with a passion for creating dynamic, user-friendly websites and mobile applications. Specializing in web design and development, I build visually appealing and functional websites tailored to meet your business needs. I also offer SEO services to enhance your site’s visibility, Android and iOS development to create seamless mobile experiences, and logo design to establish a strong brand identity.
+
+            In addition, I provide hosting services to ensure your website is secure, fast, and always accessible, along with ongoing support to maintain performance and address any issues. My goal is to deliver high-quality digital solutions that drive results, helping your business grow and succeed in the digital world.</p>
+    </div>
+ <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+{% endblock content %}
